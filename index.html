@@ -15,7 +15,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
     <!-- Custom css -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
@@ -25,7 +27,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 col-xs-12">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
               <img
                 src="assets/vector-smart-object.png"
                 srcset="
@@ -34,7 +36,7 @@
                 "
               />
             </div>
-            <form>
+            <form data-aos="fade-up" data-aos-duration="1000">
               <div class="one">
                 <label>Find Jobs</label>
                 <input
@@ -51,13 +53,13 @@
                   placeholder="Enter Zip Code"
                 />
               </div>
-              <button>
+              <button type="button" class="call_to_action">
                 Submit
                 <i class="fas fa-chevron-right"></i>
               </button>
               <!-- <input type="submit" value="Submit"> -->
             </form>
-            <div class="header_text">
+            <div class="header_text" data-aos="fade-up" data-aos-duration="1000">
               By clicking the button above, you are agreeing to install this
               extension and agreeing to abide by the EULA, Privacy Policy,
               Endorsement Disclaimer and DMCA Policy
@@ -68,7 +70,7 @@
     </header>
     <!-- //.header container -->
 
-    <section class="jobs_listings_container">
+    <section class="jobs_listings_container" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -85,7 +87,7 @@
     </section>
     <!-- //. jobs listings container -->
 
-    <section class="find_job_section">
+    <section class="find_job_section" data-aos="fade-up" data-aos-duration="1000">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 col-xs-12">
@@ -141,7 +143,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-xs-12">
-            <div class="listings_box">
+            <div class="listings_box" data-aos="fade-up" data-aos-duration="1000">
               <ul>
                 <li>
                   <svg
@@ -716,7 +718,7 @@
               </ul>
             </div>
             <!-- listings box -->
-            <div class="content_box">
+            <div class="content_box" data-aos="fade-up" data-aos-duration="1000">
               <div class="img_wrapper">
                 <img
                   src="assets/shutterstock-632579702.png"
@@ -746,7 +748,7 @@
               </div>
             </div>
             <!-- content box -->
-            <div class="listings_box">
+            <div class="listings_box" data-aos="fade-up" data-aos-duration="1000">
               <ul>
                 <li>
                   <svg
@@ -1361,7 +1363,7 @@
             <!-- listings box -->
           </div>
           <div class="col-md-6 col-xs-12">
-            <div class="content_box">
+            <div class="content_box" data-aos="fade-up" data-aos-duration="1000">
               <div class="img_wrapper">
                 <img
                   src="assets/shutterstock-632579702.png"
@@ -1391,7 +1393,7 @@
               </div>
             </div>
             <!-- content box -->
-            <div class="content_box">
+            <div class="content_box" data-aos="fade-up" data-aos-duration="1000">
               <div class="img_wrapper">
                 <img
                   src="assets/shutterstock-632579702.png"
@@ -1454,10 +1456,15 @@
       </div>
     </footer>
     <!-- //.footer -->
+
+    <!-- popup container -->
+    <section class="popup_container">
+      Thank you for downloading
+    </section>
   </body>
   <!-- Dependency Js -->
   <script src="js/jquery-3.4.0-jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
   <!-- Custom Js -->
   <script src="js/custom.js"></script>
 </html>
