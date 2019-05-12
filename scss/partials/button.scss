@@ -1,0 +1,31 @@
+@mixin button-blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #4cbcfe;
+  border: none;
+  outline: none;
+  color: #fff;
+  @include font-14;
+  font-family: "arialbold";
+  font-weight: bold;
+}
+
+@mixin button-yellow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 35px;
+  border-radius: 4px;
+  background-color: #ffc600;
+  border: none;
+  outline: none;
+  color: #53627c;
+  @include font-14;
+  font-family: "arialbold";
+  font-weight: bold;
+}

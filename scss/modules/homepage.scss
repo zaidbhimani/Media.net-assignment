@@ -1,0 +1,336 @@
+.header_container {
+  background-color: #f4f8fd;
+  padding: 54px 0px 49px 0px;
+  @media only screen and (max-width: 767px) {
+    padding: 34px 0px 49px 0px;
+  }
+
+  .wrapper {
+    margin-bottom: 89px;
+    text-align: center;
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: flex-end;
+    border-radius: 4px;
+    box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    padding: 18px 20px 19px 22px;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    label {
+      display: block;
+      @include font-10;
+      font-weight: bold;
+      color: #53627c;
+    }
+
+    .text_input {
+      //   width: 377px;
+      width: 100%;
+      height: 35px;
+      border-radius: 4px;
+      padding-left: 15px;
+      border: solid 1px #eceff4;
+      background-color: #f4f6fa;
+      outline: none;
+      @include font-14;
+      font-weight: normal;
+      color: #9da6b8;
+      font-family: "ariallight";
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    .text_input:focus {
+      border: solid 1px #4e69ff;
+      background-color: #ffffff;
+    }
+
+    .text_input::placeholder {
+      @include font-14;
+      font-weight: normal;
+      color: #9da6b8;
+      font-family: "ariallight";
+    }
+
+    .one {
+      width: 42%;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    .two {
+      width: 42%;
+      margin-left: 11px;
+      margin-right: 10px;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin-left: inherit;
+        margin-right: inherit;
+        margin: 20px 0px;
+      }
+    }
+
+    button {
+      @include button-blue;
+      font-weight: bold;
+
+      i {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .header_text {
+    @include font-10;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 19px;
+    color: #9da6b8;
+    font-family: "ariallight";
+  }
+}
+
+/*header container*/
+.jobs_listings_container {
+  border: solid 1px #e3eefa;
+  background-color: #e9f3ff;
+  padding: 37px 0px 39px 0px;
+
+  .title {
+    @include font-24;
+    font-family: "arialBold";
+    color: #53627c;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .subtitle {
+    @include font-15;
+    font-weight: normal;
+    color: #75808b;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "ariallight";
+    @media only screen and (max-width: 767px) {
+      margin-top: 15px;
+    }
+  }
+}
+
+/*jobs listings container*/
+
+.find_job_section {
+  padding: 48px 0px 49px 0px;
+  @media only screen and (max-width: 767px) {
+    padding: 40px 0px 49px 0px;
+  }
+
+  .title {
+    @include font-24;
+    font-weight: bold;
+    color: #53627c;
+    margin-top: 30px;
+    margin-bottom: 7px;
+    font-family: "arialbold";
+
+    span {
+      color: #4e6cff;
+    }
+  }
+
+  .subtitle {
+    @include font-15;
+    font-weight: normal;
+    color: #53627c;
+    font-family: "ariallight";
+  }
+
+  .content {
+    @include font-15;
+    font-weight: normal;
+    color: #53627c;
+    font-family: "ariallight";
+    text-align: left;
+    margin-top: 40px;
+    @media only screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+
+  .btn_wrapper {
+    margin-top: 20px;
+
+    button {
+      @include button-yellow;
+
+      i {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .img_wrapper {
+    position: relative;
+    box-shadow: 0px 7px 14.6px 1.4px rgba(0, 0, 0, 0.16),
+      inset 0px 1px 1px 0 #ffffff;
+    background-color: #ffffff;
+    padding: 20px;
+
+    img:nth-child(1) {
+      width: 100%;
+    }
+
+    img:nth-child(2) {
+      position: absolute;
+      /*width:100%;*/
+      top: 45%;
+      left: 45%;
+      translate: (-45%, -45%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4%;
+      bottom: 0;
+      left: 0;
+      //   background-image: linear-gradient(to bottom, #ffffff, #cdcbd5);
+      //   background-color: #000000;
+      opacity: 0.05;
+      background-image: linear-gradient(to bottom, #ffffff, #cdcbd5);
+    }
+  }
+}
+
+/*find jobs section*/
+
+.main_body_container {
+  background-color: #f4f6fa;
+  padding: 79px 0px 28px 0px;
+  @media only screen and (max-width: 767px) {
+    padding: 40px 0px 28px 0px;
+  }
+
+  .listings_box {
+    margin-bottom: 22px;
+    ul {
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 15px 15px 7px 15px;
+      font-family: "arialbold";
+      border-radius: 4px;
+      background-color: #ffffff;
+
+      li {
+        padding-left: 11px;
+        display: flex;
+        align-items: center;
+        width: 171px;
+        height: 30px;
+        list-style: none;
+        border-radius: 15px;
+        border: solid 1px #eceff4;
+        background-color: #f4f6fa;
+        @include font-12;
+        font-weight: bold;
+        color: #53627c;
+        font-family: "arialbold";
+        margin-bottom: 10px;
+        margin-left: 4px;
+
+        svg {
+          width: 8px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .content_box {
+    border-radius: 4px;
+    box-shadow: 0px 3px 9.5px 0.5px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    margin-bottom: 22px;
+    .img_wrapper {
+      position: relative;
+      img {
+        width: 100%;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.05) 66%,
+          #ffffff
+        );
+        /* bottom: 0px; */
+        top: 0px;
+        bottom: 0px;
+      }
+    }
+
+    .title {
+      @include font-24;
+      font-weight: bold;
+      color: #53627c;
+      padding-left: 33px;
+      margin-bottom: 18px;
+      font-family: "arialbold";
+    }
+
+    .content {
+      padding-left: 33px;
+      padding-right: 38px;
+      @include font-15;
+      font-weight: normal;
+      color: #75808b;
+      font-family: "ariallight";
+    }
+
+    .btn_wrapper {
+      margin-top: 20px;
+      padding-left: 33px;
+
+      button {
+        @include button-blue;
+
+        i {
+          margin-left: 10px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .trademark_text {
+    @include font-10;
+    font-weight: normal;
+    color: #a2adb8;
+    text-align: center;
+  }
+}
+
+/*main body container*/
